@@ -62,62 +62,62 @@ export default {
         {
           id: 'E76lQZG',
           name: 'Arklov Peak',
-          url: 'images/ARKLOV_PEAK.png'
+          url: '/images/ARKLOV_PEAK.png'
         },
         {
           id: 'QjzcbPo',
           name: 'Gun Runner',
-          url: 'images/GUN_RUNNER.png'
+          url: '/images/GUN_RUNNER.png'
         },
         {
           id: '1nTF21a',
           name: 'Gun Runner (Night)',
-          url: 'images/GUN_RUNNER_(night).png'
+          url: '/images/GUN_RUNNER_(night).png'
         },
         {
           id: 'xVfrfa6',
           name: 'Grazna Raid',
-          url: 'localhost/images/GRAZNA_RAID.png'
+          url: '/images/GRAZNA_RAID.png'
         },
         {
           id: 'JFlZWv5',
           name: 'St Petrograd',
-          url: 'localhost/ST_PETROGRAD.png'
+          url: '/ST_PETROGRAD.png'
         },
         {
           id: 'jwqqKh2',
           name: 'Talsik Backlot',
-          url: 'localhost/TALSIK_BACKLOT.png'
+          url: '/TALSIK_BACKLOT.png'
         },
         {
           id: 'cqMc1bg',
           name: 'Hardhat',
-          url: 'http://localhost/images/HARDHAT.png'
+          url: '/images/HARDHAT.png'
         },
         {
           id: 'FNl0zk3',
           name: 'Hovec Sawmill',
-          url: 'http://localhost/images/HOVEC_SAWMILL.png'
+          url: '/images/HOVEC_SAWMILL.png'
         },
         {
           id: 'coXQ1bI',
           name: 'Picadilly',
-          url: 'http://localhost/images/PICADILLY.png'
+          url: '/images/PICADILLY.png'
         },
         {
           id: 'K7Gvtbn',
           name: 'Azhir Cave',
-          url: 'https://localhost/images/AZHIR_CAVE.png'
+          url: '/images/AZHIR_CAVE.png'
         },
         {
           id: 'NJI0Z18',
           name: 'Azhir Cave (Night)',
-          url: 'https://localhost/images/AZHIR_CAVE_(night).png'
+          url: '/images/AZHIR_CAVE_(night).png'
         },
         {
           id: 'ApjPPGl',
           name: 'Suldal Harbor',
-          url: 'https://localhost/images/SULDAL_HARBOR.png'
+          url: '/images/SULDAL_HARBOR.png'
         },
         {
           id: 'cNDUDbi',
