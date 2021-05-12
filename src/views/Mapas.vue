@@ -82,12 +82,12 @@ export default {
         {
           id: 'JFlZWv5',
           name: 'St Petrograd',
-          url: '/ST_PETROGRAD.png'
+          url: '/images/ST_PETROGRAD.png'
         },
         {
           id: 'jwqqKh2',
           name: 'Talsik Backlot',
-          url: '/TALSIK_BACKLOT.png'
+          url: '/images/TALSIK_BACKLOT.png'
         },
         {
           id: 'cqMc1bg',
