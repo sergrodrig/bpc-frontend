@@ -16,13 +16,11 @@
           class="lg:w-1/3 sm:w-1/2 p-4"
         >
           <div class="flex relative shadow-xl">
-            <Suspense>
-              <img
-                :alt="image.name"
-                class="absolute inset-0 w-full h-full object-cover object-center"
-                :src="image.url"
-              >
-            </Suspense>
+            <img
+              :alt="image.name"
+              class="absolute inset-0 w-full h-full object-cover object-center"
+              :src="image.url"
+            >
             <div class="px-8 py-10 relative z-10 w-full border-4 border-indigo-300 bg-black opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                 {{ image.size }}
@@ -46,6 +44,238 @@ export default {
   data () {
     return {
       mapas: [
+        {
+          id: 'JnJONdW',
+          name: 'Chesire Park',
+          url: '/images/CHESIRE_PARK.png'
+        },
+        {
+          id: 'm3lLOiZ',
+          name: 'Crash',
+          url: '/images/CRASH.png'
+        },
+        {
+          id: 'ZtH6IZM',
+          name: 'Vacant',
+          url: '/images/VACANT.png'
+        },
+        {
+          id: 'E76lQZG',
+          name: 'Arklov Peak',
+          url: 'images/ARKLOV_PEAK.png'
+        },
+        {
+          id: 'QjzcbPo',
+          name: 'Gun Runner',
+          url: 'images/GUN_RUNNER.png'
+        },
+        {
+          id: '1nTF21a',
+          name: 'Gun Runner (Night)',
+          url: 'images/GUN_RUNNER_(night).png'
+        },
+        {
+          id: 'xVfrfa6',
+          name: 'Grazna Raid',
+          url: 'localhost/images/GRAZNA_RAID.png'
+        },
+        {
+          id: 'JFlZWv5',
+          name: 'St Petrograd',
+          url: 'localhost/ST_PETROGRAD.png'
+        },
+        {
+          id: 'jwqqKh2',
+          name: 'Talsik Backlot',
+          url: 'localhost/TALSIK_BACKLOT.png'
+        },
+        {
+          id: 'cqMc1bg',
+          name: 'Hardhat',
+          url: 'http://localhost/images/HARDHAT.png'
+        },
+        {
+          id: 'FNl0zk3',
+          name: 'Hovec Sawmill',
+          url: 'http://localhost/images/HOVEC_SAWMILL.png'
+        },
+        {
+          id: 'coXQ1bI',
+          name: 'Picadilly',
+          url: 'http://localhost/images/PICADILLY.png'
+        },
+        {
+          id: 'K7Gvtbn',
+          name: 'Azhir Cave',
+          url: 'https://localhost/images/AZHIR_CAVE.png'
+        },
+        {
+          id: 'NJI0Z18',
+          name: 'Azhir Cave (Night)',
+          url: 'https://localhost/images/AZHIR_CAVE_(night).png'
+        },
+        {
+          id: 'ApjPPGl',
+          name: 'Suldal Harbor',
+          url: 'https://localhost/images/SULDAL_HARBOR.png'
+        },
+        {
+          id: 'cNDUDbi',
+          name: 'Broadcast',
+          url: '/images/BROADCAST.png'
+        },
+        {
+          id: 'b4Arm6n',
+          name: 'Atlas Superstore',
+          url: '/images/ATLAS_SUPERSTORE.png'
+        },
+        {
+          id: 'o3wfuV3',
+          name: 'Euphrates Bridge',
+          url: '/images/EUPHRATES_BRIDGE.png'
+        },
+        {
+          id: 'B4b6en0',
+          name: 'Mialstore Tank Factory 10vs10',
+          url: '/images/MIALSTORE_TANK_FACTORY.png'
+        },
+        {
+          id: 'WQYkpqL',
+          name: 'Khandor Hideout',
+          url: '/images/KHANDOR_HIDEOUT.png'
+        },
+        {
+          id: 'q5W3YbM',
+          name: 'Rammaza',
+          url: '/images/RAMMAZA.png'
+        },
+        {
+          id: 'aZ3WUYE',
+          name: 'Rammaza (Night)',
+          url: '/images/RAMMAZA_(night).png'
+        },
+        {
+          id: 'IbS8bih',
+          name: 'Scrapyard',
+          url: '/images/SCRAPYARD.png'
+        },
+        {
+          id: 'JIrBCJl',
+          name: 'Petrov Oil Rig',
+          url: '/images/PETROV_OIL_RIG.png'
+        },
+        {
+          id: 'qNd8FpT',
+          name: 'Hackney Yard',
+          url: '/images/HACKNEY_YARD.png'
+        },
+        {
+          id: '35vCola',
+          name: 'Hackney Yard (Night)',
+          url: '/images/HACKNEY_YARD_(night).png'
+        },
+        {
+          id: 'QzH3HTy',
+          name: 'Shoot House',
+          url: '/images/SHOOT_HOUSE.png'
+        },
+        {
+          id: '3CLehG4',
+          name: 'Aniyah Incursion',
+          url: '/images/ANIYAH_INCURSION.png'
+        },
+        {
+          id: 'UeBP7r1',
+          name: 'Aniyah Palace',
+          url: '/images/ANIYAH_PALACE.png'
+        },
+        {
+          id: 'itdbIb2',
+          name: 'Atrium',
+          url: '/images/ATRIUM.png'
+        },
+        {
+          id: 'R9ogVlw',
+          name: 'Aisle 9',
+          url: '/images/AISLE_9.png'
+        },
+        {
+          id: 'vARwlkr',
+          name: 'Rust',
+          url: '/images/RUST.png'
+        },
+        {
+          id: 'M4zD4ZH',
+          name: 'Station',
+          url: '/images/STATION.png'
+        },
+        {
+          id: 'hgNByeJ',
+          name: 'Shipment',
+          url: '/images/SHIPMENT.png'
+        },
+        {
+          id: 'eX04wM6',
+          name: 'Pine',
+          url: '/images/PINE.png'
+        },
+        {
+          id: 'SsISkLG',
+          name: 'Docks',
+          url: '/images/DOCKS.png'
+        },
+        {
+          id: 'V110HUU',
+          name: 'Trench',
+          url: '/images/TRENCH.png'
+        },
+        {
+          id: 'mE1zt4G',
+          name: 'Speedball',
+          url: '/images/SPEEDBALL.png'
+        },
+        {
+          id: '4EAvMze',
+          name: 'Stack',
+          url: '/images/STACK.png'
+        },
+        {
+          id: 'e481hI1',
+          name: 'Gulag Shower',
+          url: '/images/GULAG_SHOWERS.png'
+        },
+        {
+          id: 'PRkrvma',
+          name: 'Hill',
+          url: '/images/HILL.png'
+        },
+        {
+          id: '5kTTZA7',
+          name: 'Cargo',
+          url: '/images/CARGO.png'
+        },
+        {
+          id: 'sUULEq6',
+          name: 'Verdansk Stadium',
+          url: '/images/VERDANSK_STADIUM.png'
+        },
+        {
+          id: '2pKiuSF',
+          name: 'Bazaar',
+          url: '/images/BAZAAR.png'
+        },
+        {
+          id: 'cKMd4nN',
+          name: 'Livestock',
+          url: '/images/LIVESTOCK.png'
+        },
+        {
+          id: '6rMglPM',
+          name: 'King',
+          url: '/images/KING.png'
+        }
+      ],
+      mapasimgur: [
         { id: 'R9ogVlw', url: 'https://imgur.com/R9ogVlw.png', name: 'Chesire Park', size: 'medium' },
         { id: '3CLehG4', url: 'https://imgur.com/3CLehG4.png', name: 'Crash', size: 'medium' },
         { id: 'UeBP7r1', url: 'https://imgur.com/UeBP7r1.png', name: 'Vacant', size: 'medium' },
@@ -92,8 +322,7 @@ export default {
         { id: 'V110HUU', url: 'https://imgur.com/V110HUU.png', name: 'Bazaar', size: 'small' },
         { id: 'ZtH6IZM', url: 'https://imgur.com/ZtH6IZM.png', name: 'Livestock', size: 'small' },
         { id: 'sUULEq6', url: 'https://imgur.com/sUULEq6.png', name: 'King', size: 'small' }
-      ],
-      size: ''
+      ]
     }
   }
 }
