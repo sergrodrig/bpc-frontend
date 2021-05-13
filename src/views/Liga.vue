@@ -20,7 +20,7 @@
             La fecha consta de <span class="font-medium text-indigo-700">6 partidas (mapas)</span>. Las partidas las gana el que llega a <span class="font-medium text-indigo-700">6 win</span> como ha sido hasta ahora.
             Se pueden jugar mas partidas si creen que es muy poco 6 pero debe ser numero par (8, 10, 12...) y que esten de acuerdo los 2 equipos.
           </li>
-          <li>El equipo de <span class="font-medium text-indigo-700">local elige los 3 primeros mapas</span> a jugar, y el equipo de <span class="font-medium text-indigo-700">visita los 3 siguientes</span> mapas.</li>
+          <li>En cada fecha, <span class="font-medium text-indigo-700">el equipo que este de local elige los 6 mapas a jugar</span>. Deben confirmarlos con antelacion.</li>
           <li>El <span class="font-medium text-indigo-700">primer duelo en un mapa sera de prueba</span> para que se alcancen a conectar todos y puedan probar las armas.</li>
           <li>El mapa sera configurado de modo que <span class="font-medium text-indigo-700">a cada equipo le toque plantar alternadamente cada 1 punto.</span></li>
           <li>El <span class="font-medium text-indigo-700">ganador de la fecha se lleva 3 puntos en la tabla</span> y el <span class="font-medium text-indigo-700">perdedor 0</span>. En caso de <span class="font-medium text-indigo-700">empate 1 punto para cada equipo</span>.</li>

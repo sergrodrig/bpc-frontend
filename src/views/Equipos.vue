@@ -7,7 +7,7 @@
     >
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-200 bg-black p-2">
-          Faccion #{{ faccion.faccionId }}
+          {{ faccion.faccionName }}
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
           {{ faccion.description }}
@@ -52,7 +52,8 @@ export default {
       facciones: [
         {
           faccionId: '1',
-          description: 'Soldados de Solubyte y sus secuaces.',
+          faccionName: 'Mancoster United',
+          description: '',
           soldados: [
             { name: 'MCLovin', rrss: '@mclovin', faccion: 1 },
             { name: 'IAmBatman', rrss: '@batman', faccion: 1 },
@@ -63,7 +64,8 @@ export default {
         },
         {
           faccionId: '2',
-          description: 'Don Cherno y los cracks',
+          faccionName: 'Los del Gulag',
+          description: '',
           soldados: [
             { name: 'Chernobyl', rrss: '@Chernobyl', faccion: 2 },
             { name: 'DrElvisTec', rrss: '@DrElvisTec', faccion: 2 },
@@ -74,7 +76,8 @@ export default {
         },
         {
           faccionId: '3',
-          description: 'Cocoliso y los malditos.',
+          faccionName: 'The Wutang Lag',
+          description: '',
           soldados: [
             { name: 'Cocoliso', rrss: '@Cocoliso', faccion: 3 },
             { name: 'NachoUC', rrss: '@Reaper', faccion: 3 },
@@ -85,13 +88,14 @@ export default {
         },
         {
           faccionId: '4',
-          description: 'Huevito rey y los degenerados del kill + reaper',
+          faccionName: 'Chichigans',
+          description: '',
           soldados: [
+            { name: 'Reaper', rrss: '@reaper', faccion: 4 },
             { name: 'Huevito', rrss: '@huevito', faccion: 4 },
-            { name: 'Huevito', rrss: '@huevito', faccion: 4 },
-            { name: 'Huevito', rrss: '@huevito', faccion: 4 },
-            { name: 'Huevito', rrss: '@huevito', faccion: 4 },
-            { name: 'Reaper', rrss: '@reaper', faccion: 4 }
+            { name: 'Prromax', rrss: '@prromax', faccion: 4 },
+            { name: 'hipox neira', rrss: '@huevito', faccion: 4 },
+            { name: 'bot ciiisar', rrss: '@huevito', faccion: 4 }
           ]
         }
         // {
