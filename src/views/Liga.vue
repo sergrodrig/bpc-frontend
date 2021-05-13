@@ -13,17 +13,17 @@
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-200 bg-black inline-block p-2">
           Formato
         </h1>
-        <ol class="leading-relaxed text-base list-disc list-inside">
-          <li>Los 4 equipos participantes jugaran 6 fechas en un sistema todos contra todos.</li>
-          <li>Las fechas seran los dias Jueves a las 22:00 hrs. a menos que se coordine un cambio.</li>
+        <ol class="leading-relaxed list-disc list-inside">
+          <li>Los <span class="font-medium text-indigo-700">4 equipos</span> participantes jugaran <span class="font-medium text-indigo-700"> 6 fechas</span> en un sistema todos contra todos.</li>
+          <li>Las fechas seran los dias <span class="font-medium text-indigo-700">Jueves a las 22:00 hrs.</span> a menos que se coordine un cambio.</li>
           <li>
-            La fecha consta de 6 partidas (mapas). Las partidas las gana el que llega a 6 win como ha sido hasta ahora.
+            La fecha consta de <span class="font-medium text-indigo-700">6 partidas (mapas)</span>. Las partidas las gana el que llega a <span class="font-medium text-indigo-700">6 win</span> como ha sido hasta ahora.
             Se pueden jugar mas partidas si creen que es muy poco 6 pero debe ser numero par (8, 10, 12...) y que esten de acuerdo los 2 equipos.
           </li>
-          <li>El equipo que esta de local elige los 3 primeros mapas a jugar, y el equipo visita los siguientes 3.</li>
-          <li>El primer duelo en un mapa sera de prueba para que se alcancen a conectar todos y puedan probar las armas.</li>
-          <li>El mapa sera configurado para que le toque plantar a cada equipo alternadamente cada 1 punto.</li>
-          <li>El ganador de la fecha se lleva 3 puntos en la tabla y el perdedor 0. En caso de empate 1 punto para cada equipo.</li>
+          <li>El equipo de <span class="font-medium text-indigo-700">local elige los 3 primeros mapas</span> a jugar, y el equipo de <span class="font-medium text-indigo-700">visita los 3 siguientes</span> mapas.</li>
+          <li>El <span class="font-medium text-indigo-700">primer duelo en un mapa sera de prueba</span> para que se alcancen a conectar todos y puedan probar las armas.</li>
+          <li>El mapa sera configurado de modo que <span class="font-medium text-indigo-700">a cada equipo le toque plantar alternadamente cada 1 punto.</span></li>
+          <li>El <span class="font-medium text-indigo-700">ganador de la fecha se lleva 3 puntos en la tabla</span> y el <span class="font-medium text-indigo-700">perdedor 0</span>. En caso de <span class="font-medium text-indigo-700">empate 1 punto para cada equipo</span>.</li>
           <li>Al final de las 6 fechas el equipo con mas puntos gana la liga y queda como campeon hasta la proxima edicion. Ademas entra al salon de la fama de BPC.</li>
         </ol>
       </div>
