@@ -3,7 +3,7 @@
     <div class="container max-w-xs xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto pt-24 md:pt-32 space-y-16 py-16">
       <div>
         <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-200 bg-black p-2">
-          Bases del torneo
+          Bases
         </h1>
         <p class="italic text-gray-400">
           Ultima modificacion: 13 Mayo 2021
@@ -16,9 +16,15 @@
         <ol class="leading-relaxed text-base list-disc list-inside">
           <li>Los 4 equipos participantes jugaran 6 fechas en un sistema todos contra todos.</li>
           <li>Las fechas seran los dias Jueves a las 22:00 hrs. a menos que se coordine un cambio.</li>
-          <li>La fecha consta de 6 u 8 partidas (a acordar por los equipos). Cada equipo elige la mitad de los mapas a jugar.</li>
-          <li>El ganador de la fecha se lleva 3 puntos y el perdedor 0. En caso de empate 1 punto para cada equipo.</li>
-          <li>Al final de las 6 fechas el equipo con mas puntos gana el torneo y queda como campeon hasta el proximo torneo. Ademas entra al salon de la fama de BPC.</li>
+          <li>
+            La fecha consta de 6 partidas (mapas). Las partidas las gana el que llega a 6 win como ha sido hasta ahora.
+            Se pueden jugar mas partidas si creen que es muy poco 6 pero debe ser numero par (8, 10, 12...) y que esten de acuerdo los 2 equipos.
+          </li>
+          <li>El equipo que esta de local elige los 3 primeros mapas a jugar, y el equipo visita los siguientes 3.</li>
+          <li>El primer duelo en un mapa sera de prueba para que se alcancen a conectar todos y puedan probar las armas.</li>
+          <li>El mapa sera configurado para que le toque plantar a cada equipo alternadamente cada 1 punto.</li>
+          <li>El ganador de la fecha se lleva 3 puntos en la tabla y el perdedor 0. En caso de empate 1 punto para cada equipo.</li>
+          <li>Al final de las 6 fechas el equipo con mas puntos gana la liga y queda como campeon hasta la proxima edicion. Ademas entra al salon de la fama de BPC.</li>
         </ol>
       </div>
       <div>

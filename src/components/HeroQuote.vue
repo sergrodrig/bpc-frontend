@@ -12,11 +12,11 @@
         </svg>
         <p class="leading-relaxed text-lg">
           En vista de que en el regimiento existen grupos que juegan regularmente, se conocen mas, u otro motivo, decidimos segmentar el regimiento para darle un giro y mas formalidad a las partidas de los Jueves.
-          Armamos 4 subgrupos (facciones) en base a los criterios mencionados. Con estos grupos armaremos un torneo de 6 semanas en los cuales se enfrentaran todos contra todos en fechas de ida y vuelta.
+          Armamos 4 subgrupos (facciones) en base a los criterios mencionados. Con estos grupos armaremos una liga de 6 semanas en los cuales se enfrentaran todos contra todos en fechas de ida y vuelta.
         </p>
         <p class="leading-relaxed text-lg">
-          El torneo y pagina estan en fase beta por lo que las reglas se van a ir adaptando con el tiempo.
-          Por ahora en el sitio hay informacion del torneo, de los equipos, y de los mapas.
+          La liga y la pagina estan en fase beta por lo que las reglas se van a ir adaptando con el tiempo.
+          Por ahora en el sitio hay informacion de la liga, de los equipos, y de los mapas.
         </p>
         <p class="leading-relaxed text-lg">
           Mas adelante agregaremos mas cosas.

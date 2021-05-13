@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const Home = () => import('../views/Home.vue')
 const Facciones = () => import('../views/Facciones.vue')
 const Mapas = () => import('../views/Mapas.vue')
-const Torneo = () => import('../views/Torneo.vue')
+const Liga = () => import('../views/Liga.vue')
 const Equipos = () => import('../views/Equipos.vue')
 const Resultados = () => import('../views/Resultados.vue')
 
@@ -28,9 +28,9 @@ const routes = [
     meta: { toTop: true, smoothScroll: true }
   },
   {
-    path: '/torneo',
-    name: 'Torneo',
-    component: Torneo,
+    path: '/liga',
+    name: 'Liga',
+    component: Liga,
     meta: { toTop: true, smoothScroll: true }
   },
   {

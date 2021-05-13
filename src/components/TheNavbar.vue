@@ -52,11 +52,11 @@
           <li class="rounded m-2">
             <router-link
               class="block py-2 px-4 text-black lg:text-white lg:text-gray-900 no-underline hover:font-bold"
-              :class="{ 'text-gray-900 font-bold': currentRoute === 'Torneo' }"
-              :to="{ name: 'Torneo'}"
+              :class="{ 'text-gray-900 font-bold': currentRoute === 'Liga' }"
+              :to="{ name: 'Liga'}"
               @click="toggleHamburger"
             >
-              Torneo
+              Liga
             </router-link>
           </li>
           <li class="rounded m-2">

@@ -6,17 +6,17 @@
     <div class="w-full h-screen bg-opacity-20 bg-black flex justify-center items-center">
       <div class="mx-4 text-center text-white">
         <h1 class="font-bold text-6xl mb-4 bg-black">
-          BPC Tournament (beta)
+          BPC League (beta)
         </h1>
         <h2 class="font-bold text-3xl mb-12 bg-gray-900">
           4 Facciones / 20 jugadores / 0 manos
         </h2>
         <div>
           <router-link
-            :to="{ name: 'Torneo' }"
+            :to="{ name: 'Liga' }"
             class="bg-indigo-800 rounded-md font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-indigo-600 mr-2"
           >
-            Mas info del torneo
+            Mas info
           </router-link>
           <router-link
             :to="{ name: 'Equipos' }"
