@@ -3,10 +3,10 @@
     <div
       v-for="faccion in facciones"
       :key="faccion.faccionId"
-      class="container px-5 py-24 mx-auto"
+      class="container py-24 mx-auto max-w-5xl"
     >
       <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-200 bg-black p-2">
           Faccion #{{ faccion.faccionId }}
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -69,7 +69,7 @@ export default {
             { name: 'DrElvisTec', rrss: '@DrElvisTec', faccion: 2 },
             { name: 'ElCharrasqueado', rrss: '@ElCharrasqueado', faccion: 2 },
             { name: 'ElJefeReyes', rrss: '@ElJefeReyes', faccion: 2 },
-            { name: 'Lex', rrss: '@Lex', faccion: 2 }
+            { name: 'Lex4', rrss: '@Lex', faccion: 2 }
           ]
         },
         {
@@ -77,7 +77,7 @@ export default {
           description: 'Cocoliso y los malditos.',
           soldados: [
             { name: 'Cocoliso', rrss: '@Cocoliso', faccion: 3 },
-            { name: 'Reaper', rrss: '@Reaper', faccion: 3 },
+            { name: 'NachoUC', rrss: '@Reaper', faccion: 3 },
             { name: 'Ragnarok', rrss: '@Ragnarok', faccion: 3 },
             { name: 'D-Day', rrss: '@D-Day', faccion: 3 },
             { name: 'Jacontr', rrss: '@Jacontr', faccion: 3 }
@@ -85,26 +85,26 @@ export default {
         },
         {
           faccionId: '4',
-          description: 'Huevito rey y los degenerados del kill.',
+          description: 'Huevito rey y los degenerados del kill + reaper',
           soldados: [
             { name: 'Huevito', rrss: '@huevito', faccion: 4 },
             { name: 'Huevito', rrss: '@huevito', faccion: 4 },
             { name: 'Huevito', rrss: '@huevito', faccion: 4 },
             { name: 'Huevito', rrss: '@huevito', faccion: 4 },
-            { name: 'Huevito', rrss: '@huevito', faccion: 4 }
-          ]
-        },
-        {
-          faccionId: '5',
-          description: 'Invitados',
-          soldados: [
-            { name: 'FPMR Tego', rrss: '@FPMR Tego', faccion: 5 },
-            { name: 'FPMR SrMiranda', rrss: '@FPMR SrMiranda', faccion: 5 },
-            { name: 'FPMR Deimos', rrss: '@FPMR Deimos', faccion: 5 },
-            { name: 'FPMR Zeke', rrss: '@FPMR Zeke', faccion: 5 },
-            { name: 'FPMR ?', rrss: '@FPMR ?', faccion: 5 }
+            { name: 'Reaper', rrss: '@reaper', faccion: 4 }
           ]
         }
+        // {
+        //   faccionId: '5',
+        //   description: 'Invitados',
+        //   soldados: [
+        //     { name: 'FPMR Tego', rrss: '@FPMR Tego', faccion: 5 },
+        //     { name: 'FPMR SrMiranda', rrss: '@FPMR SrMiranda', faccion: 5 },
+        //     { name: 'FPMR Deimos', rrss: '@FPMR Deimos', faccion: 5 },
+        //     { name: 'FPMR Zeke', rrss: '@FPMR Zeke', faccion: 5 },
+        //     { name: 'FPMR ?', rrss: '@FPMR ?', faccion: 5 }
+        //   ]
+        // }
       ]
     }
   }

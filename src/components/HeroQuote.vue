@@ -15,7 +15,7 @@
           Armamos 4 subgrupos (facciones) en base a los criterios mencionados. Con estos grupos armaremos un torneo de 6 semanas en los cuales se enfrentaran todos contra todos en fechas de ida y vuelta.
         </p>
         <p class="leading-relaxed text-lg">
-          El torneo esta en fase beta por lo que las reglas se van a ir adaptando con el tiempo.
+          El torneo y pagina estan en fase beta por lo que las reglas se van a ir adaptando con el tiempo.
           Por ahora en el sitio hay informacion del torneo, de los equipos, y de los mapas.
         </p>
         <p class="leading-relaxed text-lg">

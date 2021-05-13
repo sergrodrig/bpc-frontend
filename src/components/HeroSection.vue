@@ -6,7 +6,7 @@
     <div class="w-full h-screen bg-opacity-20 bg-black flex justify-center items-center">
       <div class="mx-4 text-center text-white">
         <h1 class="font-bold text-6xl mb-4 bg-black">
-          BPC Tournament
+          BPC Tournament (beta)
         </h1>
         <h2 class="font-bold text-3xl mb-12 bg-gray-900">
           4 Facciones / 20 jugadores / 0 manos
