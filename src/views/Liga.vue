@@ -1,6 +1,6 @@
 <template>
   <section class="text-gray-600 body-font">
-    <div class="container max-w-xs xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto pt-24 md:pt-32 space-y-16 py-16">
+    <div class="container max-w-xs xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto space-y-16 py-24">
       <div>
         <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-200 bg-black p-2">
           Bases

@@ -7,7 +7,7 @@
     >
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-200 bg-black p-2">
-          {{ faccion.faccionName }}
+          {{ faccion.faccionName }} [{{ faccion.sigla }}]
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
           {{ faccion.description }}
@@ -53,6 +53,7 @@ export default {
         {
           faccionId: '1',
           faccionName: 'Mancoster United',
+          sigla: 'MCU',
           description: '',
           soldados: [
             { name: 'MCLovin', rrss: '@mclovin', faccion: 1 },
@@ -65,6 +66,7 @@ export default {
         {
           faccionId: '2',
           faccionName: 'Los del Gulag',
+          sigla: 'LDG',
           description: '',
           soldados: [
             { name: 'Chernobyl', rrss: '@Chernobyl', faccion: 2 },
@@ -77,6 +79,7 @@ export default {
         {
           faccionId: '3',
           faccionName: 'The Wutang Lag',
+          sigla: 'TWL',
           description: '',
           soldados: [
             { name: 'Cocoliso', rrss: '@Cocoliso', faccion: 3 },
@@ -89,6 +92,7 @@ export default {
         {
           faccionId: '4',
           faccionName: 'Chichigans',
+          sigla: 'CCG',
           description: '',
           soldados: [
             { name: 'Reaper', rrss: '@reaper', faccion: 4 },
