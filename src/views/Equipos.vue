@@ -27,7 +27,7 @@
             > -->
             <div class="w-16 h-16 bg-gray-500 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
               <p class="text-center text-gray-50">
-                F{{ faccion.faccionId }}
+                {{ faccion.sigla }}
               </p>
             </div>
             <div class="flex-grow">
@@ -56,11 +56,11 @@ export default {
           sigla: 'MCU',
           description: '',
           soldados: [
-            { name: 'MCLovin', rrss: '@mclovin', faccion: 1 },
-            { name: 'IAmBatman', rrss: '@batman', faccion: 1 },
-            { name: 'JE', rrss: '@juanenrique', faccion: 1 },
-            { name: 'Jakesnake', rrss: '@jakesnae', faccion: 1 },
-            { name: 'Anfeta', rrss: '@anfetasour', faccion: 1 }
+            { name: 'MClovin', rrss: '@mclovin', faccion: 1 },
+            { name: 'IAM_B-A-T-M-A-N', rrss: '@batman', faccion: 1 },
+            { name: 'JuanEnrique_94', rrss: '@juanenrique', faccion: 1 },
+            { name: 'jakesnakemgs', rrss: '@jakesnae', faccion: 1 },
+            { name: 'AnfetaSour', rrss: '@anfetasour', faccion: 1 }
           ]
         },
         {
@@ -70,10 +70,10 @@ export default {
           description: '',
           soldados: [
             { name: 'Chernobyl', rrss: '@Chernobyl', faccion: 2 },
-            { name: 'DrElvisTec', rrss: '@DrElvisTec', faccion: 2 },
-            { name: 'ElCharrasqueado', rrss: '@ElCharrasqueado', faccion: 2 },
-            { name: 'ElJefeReyes', rrss: '@ElJefeReyes', faccion: 2 },
-            { name: 'Lex4', rrss: '@Lex', faccion: 2 }
+            { name: 'Dr Elvis Tec', rrss: '@DrElvisTec', faccion: 2 },
+            { name: 'El Charrasqueado', rrss: '@ElCharrasqueado', faccion: 2 },
+            { name: 'EljefeReyes', rrss: '@ElJefeReyes', faccion: 2 },
+            { name: 'LexzCheBolud', rrss: '@Lex', faccion: 2 }
           ]
         },
         {
@@ -82,11 +82,11 @@ export default {
           sigla: 'TWL',
           description: '',
           soldados: [
-            { name: 'Cocoliso', rrss: '@Cocoliso', faccion: 3 },
-            { name: 'NachoUC', rrss: '@Reaper', faccion: 3 },
-            { name: 'Ragnarok', rrss: '@Ragnarok', faccion: 3 },
-            { name: 'D-Day', rrss: '@D-Day', faccion: 3 },
-            { name: 'Jacontr', rrss: '@Jacontr', faccion: 3 }
+            { name: 'cocolisovandame_', rrss: '@Cocoliso', faccion: 3 },
+            { name: 'naxouc10', rrss: '@Reaper', faccion: 3 },
+            { name: 'RaGnArooK', rrss: '@Ragnarok', faccion: 3 },
+            { name: 'Tezzeret', rrss: '@D-Day', faccion: 3 },
+            { name: 'jacontr', rrss: '@Jacontr', faccion: 3 }
           ]
         },
         {
@@ -95,11 +95,11 @@ export default {
           sigla: 'CCG',
           description: '',
           soldados: [
-            { name: 'Reaper', rrss: '@reaper', faccion: 4 },
-            { name: 'Huevito', rrss: '@huevito', faccion: 4 },
-            { name: 'Prromax', rrss: '@prromax', faccion: 4 },
-            { name: 'hipox neira', rrss: '@huevito', faccion: 4 },
-            { name: 'bot ciiisar', rrss: '@huevito', faccion: 4 }
+            { name: 'R3eapeR34', rrss: '@reaper', faccion: 4 },
+            { name: 'Darth Vader', rrss: '@huevito', faccion: 4 },
+            { name: 'PrroMax-kun', rrss: '@prromax', faccion: 4 },
+            { name: 'Armandoki', rrss: '@huevito', faccion: 4 },
+            { name: 'BOT ciiisar', rrss: '@huevito', faccion: 4 }
           ]
         }
         // {
