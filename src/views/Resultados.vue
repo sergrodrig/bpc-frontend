@@ -26,7 +26,7 @@
                 Rounds ganados
               </th>
               <th class="px-6 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                Rounds ganados
+                Rounds perdidos
               </th>
               <th class="px-6 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br">
                 Ratio
@@ -45,13 +45,13 @@
                 3
               </td>
               <td class="px-6 py-3">
-                ?
+                36
               </td>
               <td class="px-6 py-3 text-lg text-gray-900">
-                ?
+                10
               </td>
               <td class="px-6 py-3 text-lg text-gray-900">
-                ?
+                3,6
               </td>
             </tr>
             <tr>
@@ -91,7 +91,7 @@
                 29
               </td>
               <td class="border-t-2 border-gray-200 px-6 py-3 text-lg text-gray-900">
-                0,7
+                0,68
               </td>
             </tr>
             <tr>
@@ -105,13 +105,13 @@
                 0
               </td>
               <td class="border-t-2 border-b-2 border-gray-200 px-6 py-3">
-                ?
+                10
               </td>
               <td class="border-t-2 border-b-2 border-gray-200 px-6 py-3 text-lg text-gray-900">
-                ?
+                36
               </td>
               <td class="border-t-2 border-b-2 border-gray-200 px-6 py-3 text-lg text-gray-900">
-                ?
+                0,27
               </td>
             </tr>
           </tbody>
