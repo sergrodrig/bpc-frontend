@@ -7,6 +7,7 @@ const Mapas = () => import('../views/Mapas.vue')
 const Liga = () => import('../views/Liga.vue')
 const Equipos = () => import('../views/Equipos.vue')
 const Resultados = () => import('../views/Resultados.vue')
+const ConfigurarPartida = () => import('../views/ConfigurarPartida.vue')
 
 const routes = [
   {
@@ -43,6 +44,12 @@ const routes = [
     path: '/equipos',
     name: 'Equipos',
     component: Equipos,
+    meta: { toTop: true, smoothScroll: true }
+  },
+  {
+    path: '/configurarpartida',
+    name: 'ConfigurarPartida',
+    component: ConfigurarPartida,
     meta: { toTop: true, smoothScroll: true }
   }
   // {
