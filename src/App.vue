@@ -10,13 +10,15 @@
     <the-navbar />
 
     <!-- Router View -->
-    <router-view v-slot="{ Component }">
-      <transition
-        name="fade"
-      >
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <div class="min-h-screen">
+      <router-view v-slot="{ Component }">
+        <transition
+          name="fade"
+        >
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
 
     <!-- Footer -->
     <the-footer />
