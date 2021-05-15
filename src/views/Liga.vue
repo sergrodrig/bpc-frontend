@@ -56,29 +56,18 @@
             FECHAS IDA
           </h2>
           <ul><span class="font-semibold">Fecha #1: </span>Jueves 13 Mayo 22:00</ul>
-          <ul>
-            <span class="font-semibold">Fecha #2: </span>
-            Jueves 20 Mayo 22:00 **
-          </ul>
-          <ul>
-            <span class="font-semibold">Fecha #3: </span>
-            Jueves 27 Mayo 22:00 **
-          </ul>
+          <ul><span class="font-semibold">Fecha #2: </span>Jueves 20 Mayo 22:00 **</ul>
+          <ul><span class="font-semibold">Fecha #3: </span>Jueves 27 Mayo 22:00 **</ul>
+          <ul><span class="font-semibold">Fecha #4: </span>Jueves 3 Junio 22:00 **</ul>
+          <ul><span class="font-semibold">Fecha #5: </span>Jueves 10 Junio 22:00 **</ul>
           <h2 class="sm:text-lg text-md font-medium title-font mb-4 text-gray-900 mt-4">
             FECHAS VUELTA
           </h2>
-          <ul>
-            <span class="font-semibold">Fecha #4: </span>
-            Jueves 3 Junio 22:00 **
-          </ul>
-          <ul>
-            <span class="font-semibold">Fecha #5: </span>
-            Jueves 10 Junio 22:00 **
-          </ul>
-          <ul>
-            <span class="font-semibold">Fecha #6: </span>
-            Jueves 17 Junio 22:00 **
-          </ul>
+          <ul><span class="font-semibold">Fecha #6: </span>Jueves 17 Junio 22:00 **</ul>
+          <ul><span class="font-semibold">Fecha #7: </span>Jueves 24 Junio 22:00 **</ul>
+          <ul><span class="font-semibold">Fecha #8: </span>Jueves 1 Julio 22:00 **</ul>
+          <ul><span class="font-semibold">Fecha #9: </span>Jueves 8 Julio 22:00 **</ul>
+          <ul><span class="font-semibold">Fecha #10: </span>Jueves 15 Julio 22:00 **</ul>
         </ol>
         <p class="mt-4 text-sm italic">
           ** por confirmar
