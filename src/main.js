@@ -1,3 +1,6 @@
+/* eslint-disable import/first */
+require('dotenv').config()
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -7,7 +10,7 @@ import LogRocket from 'logrocket'
 import { createClient } from 'villus'
 
 const client = createClient({
-  url: 'http://localhost:3000/admin/api/'
+  url: process.env.VUE_APP_API_URL
 })
 
 LogRocket.init('nckyti/sudoers-remuneraciones')
