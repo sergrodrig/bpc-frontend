@@ -50,10 +50,10 @@
         :class="{ 'hidden': !hamburger }"
       >
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
-          <li class="rounded m-2">
+          <li class="m-2">
             <router-link
-              class="block py-2 px-4 text-black lg:text-white lg:text-gray-900 no-underline hover:font-bold"
-              :class="{ 'text-gray-900 font-bold': currentRoute === 'Liga' }"
+              class="rounded-md block py-2 px-4 no-underline hover:bg-green-500 hover:text-white transition duration-200 ease-in-out"
+              :class="{ 'text-white bg-green-500': currentRoute === 'Liga' }"
               :to="{ name: 'Liga'}"
               @click="toggleHamburger"
             >
@@ -62,8 +62,8 @@
           </li>
           <li class="rounded m-2">
             <router-link
-              class="block py-2 px-4 text-black lg:text-white lg:text-gray-900 no-underline hover:font-bold"
-              :class="{ 'text-gray-900 font-bold': currentRoute === 'Equipos' }"
+              class="rounded-md block py-2 px-4 no-underline hover:bg-green-500 hover:text-white transition duration-200 ease-in-out"
+              :class="{ 'text-white bg-green-500': currentRoute === 'Equipos' }"
               :to="{ name: 'Equipos' }"
               @click="toggleHamburger"
             >
@@ -72,8 +72,8 @@
           </li>
           <li class="rounded m-2">
             <router-link
-              class="block py-2 px-4 text-black lg:text-white lg:text-gray-900 no-underline hover:font-bold"
-              :class="{ 'text-gray-900 font-bold': currentRoute === 'Mapas' }"
+              class="rounded-md block py-2 px-4 no-underline hover:bg-green-500 hover:text-white transition duration-200 ease-in-out"
+              :class="{ 'text-white bg-green-500': currentRoute === 'Mapas' }"
               :to="{ name: 'Mapas' }"
               @click="toggleHamburger"
             >
@@ -82,13 +82,16 @@
           </li>
           <li class="rounded lg:rounded-none m-2">
             <router-link
-              class="block py-2 px-4 text-black lg:text-white lg:text-gray-900 no-underline hover:font-bold"
-              :class="{ 'text-gray-900 font-bold': currentRoute === 'Resultados' }"
+              class="rounded-md block py-2 px-4 no-underline hover:bg-green-500 hover:text-white transition duration-200 ease-in-out"
+              :class="{ 'text-white bg-green-500': currentRoute === 'Resultados' }"
               :to="{ name: 'Resultados' }"
               @click="toggleHamburger"
             >
               Resultados
             </router-link>
+          </li>
+          <li class="rounded lg:rounded-none m-2">
+            <span>{{ authUser }}</span>
           </li>
         </ul>
       </div>

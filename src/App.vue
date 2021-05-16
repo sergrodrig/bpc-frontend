@@ -1,34 +1,29 @@
 <template>
-  <transition
-    name="fade"
-    mode="out-in"
-  >
-    <div class="bg-gray-50 font-sans leading-normal tracking-normal">
-      <!-- Progress Bar only on Post -->
-      <progress-bar
-        v-if="currentRoute !== 'Home'"
-        :progress="progress"
-      />
+  <div class="bg-gray-50 font-sans leading-normal tracking-normal">
+    <!-- Progress Bar only on Post -->
+    <progress-bar
+      v-if="currentRoute !== 'Home'"
+      :progress="progress"
+    />
 
-      <!-- NavBar -->
-      <the-navbar />
+    <!-- NavBar -->
+    <the-navbar />
 
-      <!-- Router View -->
-      <div class="min-h-screen py-14 md:py-20">
-        <router-view v-slot="{ Component }">
-          <transition
-            name="fade"
-            mode="out-in"
-          >
-            <component :is="Component" />
-          </transition>
-        </router-view>
-      </div>
-
-      <!-- Footer -->
-      <the-footer />
+    <!-- Router View -->
+    <div class="min-h-screen py-14 md:py-20">
+      <router-view v-slot="{ Component }">
+        <transition
+          name="fade"
+          mode="out-in"
+        >
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </div>
-  </transition>
+
+    <!-- Footer -->
+    <the-footer />
+  </div>
 </template>
 
 <script>
