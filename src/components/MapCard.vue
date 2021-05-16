@@ -1,21 +1,15 @@
 <template>
-  <div class="flex relative shadow-xl">
+  <div class="flex relative z-0">
+    <div class="absolute inset-0 z-10 flex transition hover:opacity-0 focus:opacity-0 active:opacity-0 duration-200 ease-in">
+      <div class="absolute inset-0 bg-black opacity-20" />
+      <div class="mx-auto text-white z-10 self-center uppercase tracking-wide text-xl font-thin shadow-xl">
+        {{ name }}
+      </div>
+    </div>
     <img
       :alt="name"
-      class="absolute inset-0 w-full h-full object-cover object-center"
       :src="url"
     >
-    <div class="px-8 py-10 relative z-10 w-full border-4 border-indigo-300 bg-black opacity-0 hover:opacity-100">
-      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-        {{ size }}
-      </h2>
-      <h1 class="title-font text-lg font-medium text-gray-200 mb-3">
-        {{ name }}
-      </h1>
-      <p class="leading-relaxed text-gray-500">
-        {{ descripcion }}
-      </p>
-    </div>
   </div>
 </template>
 

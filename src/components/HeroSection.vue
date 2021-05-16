@@ -11,16 +11,16 @@
         <h2 class="font-bold text-3xl mb-12 bg-gray-900">
           4 Facciones / 20 jugadores / 0 manos
         </h2>
-        <div>
+        <div class="space-x-4">
           <router-link
             :to="{ name: 'Liga' }"
-            class="bg-indigo-800 rounded-md font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-indigo-600 mr-2"
+            class="rounded hover:rounded-lg font-bold text-white px-4 py-5 transition duration-300 ease-in-out bg-green-600 hover:bg-green-500 shadow"
           >
-            Mas info
+            Mas informacion de la liga
           </router-link>
           <router-link
             :to="{ name: 'Equipos' }"
-            class="bg-green-400 rounded-md font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-green-300 ml-2"
+            class="rounded hover:rounded-lg font-bold text-white px-4 py-5 transition duration-300 ease-in-out bg-indigo-500 hover:bg-indigo-400 shadow"
           >
             Equipos
           </router-link>

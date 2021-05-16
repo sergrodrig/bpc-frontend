@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="space-y-20">
     <hero-section />
     <hero-quote />
   </div>

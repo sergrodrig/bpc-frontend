@@ -1,6 +1,6 @@
 <template>
-  <section class="text-gray-600 body-font">
-    <div class="container py-24 mx-auto max-w-5xl">
+  <section class="text-gray-600 body-font pt-12">
+    <div class="container mx-auto max-w-5xl">
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-200 bg-black p-2">
           Tabla de posiciones

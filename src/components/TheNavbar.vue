@@ -1,9 +1,10 @@
 <template>
   <nav
     id="header"
-    class="fixed w-full z-10 top-0 transition duration-300 ease-in-out"
+    class="fixed w-full h-14 md:h-20 z-10 top-0 transition duration-300 ease-in-out"
     :class="{
-      'bg-white shadow': !transparentNavBar || currentRoute === 'Home',
+      'bg-white': !transparentNavBar || currentRoute === 'Home',
+      'shadow-xl': true,
       'transform-gpu -translate-y-full': !showNavbar
     }"
   >
@@ -136,7 +137,8 @@ export default {
       }
       // Si la pagina esta en su maxima posicion de arriba, devuelve true
       this.onTop = currentScrollPosition === 0
-      this.transparentNavBar = currentScrollPosition < 50
+      this.transparentNavBar = currentScrollPosition < 0
+      // this.transparentNavBar = currentScrollPosition < 50
 
       // Si el scroll va bajando se esconde el navbar, si va subiendo se muestra
       this.showNavbar = currentScrollPosition < this.lastScrollPosition

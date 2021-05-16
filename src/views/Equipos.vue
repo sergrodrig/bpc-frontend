@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div>
+    <div class="pt-12">
       <section
         v-if="isFetching"
         class="text-gray-600 body-font min-h-screen flex justify-center items-center"
@@ -11,14 +11,14 @@
       </section>
       <section
         v-if="data"
-        class="text-gray-600 body-font min-h-screen"
+        class="text-gray-600 body-font min-h-screen space-y-24"
       >
         <div
           v-for="faccion in data.allFacciones"
           :key="faccion.id"
-          class="container py-24 mx-auto max-w-5xl"
+          class="container mx-auto max-w-5xl"
         >
-          <div class="flex flex-col text-center w-full mb-20">
+          <div class="flex flex-col text-center w-full mb-4">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-200 bg-black p-2">
               {{ faccion.name }} [{{ faccion.initials }}]
             </h1>

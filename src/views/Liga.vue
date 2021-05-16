@@ -1,6 +1,6 @@
 <template>
-  <section class="text-gray-600 body-font">
-    <div class="container max-w-xs xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto space-y-16 py-24">
+  <section class="text-gray-600 body-font pt-24">
+    <div class="container max-w-xs xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto space-y-16">
       <div>
         <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-200 bg-black p-2">
           Bases
@@ -14,7 +14,7 @@
           Formato
         </h1>
         <ol class="leading-relaxed list-disc list-inside">
-          <li>Los <span class="font-medium text-indigo-700">4 equipos</span> participantes jugaran <span class="font-medium text-indigo-700"> 6 fechas</span> en un sistema todos contra todos.</li>
+          <li>Los equipos participantes jugaran en un sistema todos contra todos.</li>
           <li>Las fechas seran los dias <span class="font-medium text-indigo-700">Jueves a las 22:00 hrs.</span> a menos que se coordine un cambio.</li>
           <li>
             La fecha consta de <span class="font-medium text-indigo-700">6 partidas (mapas)</span>. Las partidas las gana el que llega a <span class="font-medium text-indigo-700">6 win</span> como ha sido hasta ahora.
