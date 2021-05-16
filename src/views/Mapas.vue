@@ -66,7 +66,7 @@ export default {
         allMapas{
           id
           name
-          url
+          url: urlTiny
         }
       }
     `
