@@ -3,11 +3,35 @@
     <div class="pt-12">
       <section
         v-if="isFetching"
-        class="text-gray-600 body-font min-h-screen flex justify-center items-center"
+        class="text-gray-600 body-font min-h-screen animate-pulse space-y-24"
       >
-        <p>
-          <animation-icon />
-        </p>
+        <div
+          v-for="keya in 3"
+          :key="keya"
+          class="container mx-auto max-w-5xl"
+        >
+          <div class="w-full mb-4">
+            <div class="bg-gray-300 h-14 p-2 mb-8" />
+            <div class="lg:w-2/3 mx-auto leading-relaxed text-base" />
+          </div>
+          <div class="flex flex-wrap -m-2">
+            <div
+              v-for="keyb in 6"
+              :key="keyb"
+              class="w-full lg:w-1/3 md:w-1/2 p-2"
+            >
+              <div class="h-256 flex items-center border-gray-200 bg-gray-300 border p-4 rounded-lg">
+                <div class="w-16 h-16 bg-gray-200 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
+                  <div class="text-center text-gray-50" />
+                </div>
+                <div class="flex-grow">
+                  <div class="text-gray-900 title-font font-medium" />
+                  <div class="text-gray-500" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section
         v-if="data"
@@ -56,14 +80,10 @@
 </template>
 
 <script>
-import AnimationIcon from '@/components/AnimationIcon'
 import { useQuery } from 'villus'
 
 export default {
   name: 'Equipos',
-  components: {
-    AnimationIcon
-  },
   setup () {
     const obtenerFacciones = `
       query obtenerFacciones{
@@ -88,5 +108,13 @@ export default {
 </script>
 
 <style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.9s ease;
+}
 
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
