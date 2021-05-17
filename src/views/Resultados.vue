@@ -9,121 +9,100 @@
           3 puntos triunfo / 1 punto empate / 0 puntos derrota
         </p>
       </div>
-      <div class="lg:w-3/3 w-full mx-auto overflow-auto">
-        <table class="table-auto w-full text-left whitespace-no-wrap">
-          <thead>
-            <tr>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white rounded-tl rounded-bl">
-                Pos.
-              </th>
-              <th class="py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
-                Equipo
-              </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
-                Puntos
-              </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
-                Rounds ganados
-              </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
-                Rounds perdidos
-              </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white rounded-tr rounded-br">
-                Ratio
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="text-center py-3">
-                1
-              </td>
-              <td class="py-3&quot;">
-                Chichigans
-              </td>
-              <td class="text-center py-3 font-bold">
-                3
-              </td>
-              <td class="text-center py-3">
-                36
-              </td>
-              <td class="text-center py-3">
-                10
-              </td>
-              <td class="text-center py-3">
-                3,6
-              </td>
-            </tr>
-            <tr>
-              <td class="border-t-2 border-gray-200 text-center py-3">
-                2
-              </td>
-              <td class="border-t-2 border-gray-200 py-3">
-                Los del Gulag
-              </td>
-              <td class="border-t-2 border-gray-200 text-center py-3 font-bold">
-                1
-              </td>
-              <td class="border-t-2 border-gray-200 text-center py-3">
-                29
-              </td>
-              <td class="border-t-2 border-gray-200 text-center py-3">
-                20
-              </td>
-              <td class="border-t-2 border-gray-200 text-center py-3">
-                1,45
-              </td>
-            </tr>
-            <tr>
-              <td class="border-t-2 border-gray-200 text-center py-3">
-                3
-              </td>
-              <td class="border-t-2 border-gray-200 py-3">
-                Mancoster United
-              </td>
-              <td class="border-t-2 border-gray-200 text-center py-3 font-bold">
-                1
-              </td>
-              <td class="border-t-2 border-gray-200 text-center py-3">
-                20
-              </td>
-              <td class="border-t-2 border-gray-200 text-center py-3">
-                29
-              </td>
-              <td class="border-t-2 border-gray-200 text-center py-3">
-                0,68
-              </td>
-            </tr>
-            <tr>
-              <td class="border-t-2 border-b-2 border-gray-200 text-center py-3">
-                4
-              </td>
-              <td class="border-t-2 border-b-2 border-gray-200 py-3">
-                The Wutang Lag
-              </td>
-              <td class="border-t-2 border-b-2 border-gray-200 text-center py-3 font-bold">
-                0
-              </td>
-              <td class="border-t-2 border-b-2 border-gray-200 text-center py-3">
-                10
-              </td>
-              <td class="border-t-2 border-b-2 border-gray-200 text-center py-3">
-                36
-              </td>
-              <td class="border-t-2 border-b-2 border-gray-200 text-center py-3">
-                0,27
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div v-if="isFetching">
+        <p>cargando...</p>
+      </div>
+      <div v-if="data">
+        <div class="lg:w-3/3 w-full mx-auto overflow-auto">
+          <table class="table-auto w-full text-left whitespace-no-wrap">
+            <thead>
+              <tr>
+                <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white rounded-tl rounded-bl">
+                  Pos.
+                </th>
+                <th class="py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
+                  Equipo
+                </th>
+                <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
+                  Puntos
+                </th>
+                <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
+                  Jugados
+                </th>
+                <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
+                  Rounds+
+                </th>
+                <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
+                  Rounds-
+                </th>
+                <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white rounded-tr rounded-br">
+                  Ratio
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="value,key in data.allPuntajes"
+                :key="value.id"
+              >
+                <td class="text-center py-3">
+                  {{ key + 1 }}
+                </td>
+                <td class="py-3&quot;">
+                  {{ value.team.name }}
+                </td>
+                <td class="text-center py-3 font-bold">
+                  {{ value.points }}
+                </td>
+                <td class="text-center py-3">
+                  {{ value.matchPlayed }}
+                </td>
+                <td class="text-center py-3">
+                  {{ value.roundsWon }}
+                </td>
+                <td class="text-center py-3">
+                  {{ value.roundsLost }}
+                </td>
+                <td class="text-center py-3">
+                  {{ value.roundsWLRatio }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {
+import { useQuery } from 'villus'
 
+export default {
+  name: 'Resultados',
+  setup () {
+    const obtenerPuntajes = `
+      query obtenerPuntajes {
+        allPuntajes(sortBy:[points_DESC,roundsWLRatio_DESC]) {
+          id
+          position
+          team {
+            name
+          }
+          points
+          matchPlayed
+          roundsWon
+          roundsLost
+          roundsWLRatio
+        }
+      }
+    `
+    const { data, isFetching } = useQuery({
+      query: obtenerPuntajes
+    })
+
+    return { data, isFetching }
+  }
 }
 </script>
 
