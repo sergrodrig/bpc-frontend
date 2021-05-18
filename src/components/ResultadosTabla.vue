@@ -39,16 +39,16 @@
               <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
                 Puntos
               </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
+              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:block">
                 Jugados
               </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
+              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:block">
                 Rounds+
               </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white">
+              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:block">
                 Rounds-
               </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white rounded-tr rounded-br">
+              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:block rounded-tr rounded-br">
                 Ratio
               </th>
             </tr>
@@ -67,16 +67,16 @@
               <td class="text-center py-3 font-bold">
                 {{ value.points }}
               </td>
-              <td class="text-center py-3">
+              <td class="text-center py-3 hidden md:block">
                 {{ value.matchPlayed }}
               </td>
-              <td class="text-center py-3">
+              <td class="text-center py-3 hidden md:block">
                 {{ value.roundsWon }}
               </td>
-              <td class="text-center py-3">
+              <td class="text-center py-3 hidden md:block">
                 {{ value.roundsLost }}
               </td>
-              <td class="text-center py-3">
+              <td class="text-center py-3 hidden md:block">
                 {{ value.roundsWLRatio }}
               </td>
             </tr>
