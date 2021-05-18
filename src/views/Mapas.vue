@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="text-gray-600 body-font pt-12"
-  >
+  <section class="text-gray-600 body-font pt-12">
     <div class="container px-5 mx-auto max-w-6xl">
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-200 bg-black inline-block p-2">
