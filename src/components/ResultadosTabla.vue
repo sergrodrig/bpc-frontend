@@ -40,17 +40,18 @@
                 Puntos
               </th>
               <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell">
-                Jugados
+                Fechas Jugadas
               </th>
               <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell">
-                Rounds+
+                Rounds
+                Ganados
               </th>
               <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell">
-                Rounds-
+                Rounds perdidos
               </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell rounded-tr rounded-br">
+              <!-- <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell rounded-tr rounded-br">
                 Ratio
-              </th>
+              </th> -->
             </tr>
           </thead>
           <tbody>
@@ -76,9 +77,9 @@
               <td class="text-center py-3 hidden md:table-cell">
                 {{ value.roundsLost }}
               </td>
-              <td class="text-center py-3 hidden md:table-cell">
+              <!-- <td class="text-center py-3 hidden md:table-cell">
                 {{ value.roundsWLRatio }}
-              </td>
+              </td> -->
             </tr>
           </tbody>
         </table>
