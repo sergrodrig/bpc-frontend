@@ -14,7 +14,8 @@
             Fecha {{ fecha.week }}
           </h1>
           <h2 class="text-xs uppercase font-medium tracking-wider">
-            {{ fecha.date }}
+            <!-- {{ humanFriendlyDate(fecha.date) }} -->
+            {{ humanFriendlyDate(fecha.date) }} ({{ diffForHumans(fecha.date) }})
           </h2>
         </div>
         <!-- resultados -->
@@ -46,6 +47,8 @@
 
 <script>
 import { useQuery } from 'villus'
+import dayjs from 'dayjs'
+import localeEs from 'dayjs/locale/es'
 
 export default {
   name: 'ResultadosFechas',
@@ -81,6 +84,14 @@ export default {
     })
 
     return { data }
+  },
+  methods: {
+    diffForHumans (date) {
+      return dayjs(date).locale(localeEs).fromNow()
+    },
+    humanFriendlyDate (date) {
+      return dayjs(date).locale(localeEs).format('D MMMM')
+    }
   }
 }
 </script>
