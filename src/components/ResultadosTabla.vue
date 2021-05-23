@@ -92,7 +92,7 @@
 import { useQuery } from 'villus'
 
 export default {
-  name: 'Resultados',
+  name: 'ResultadosTabla',
   setup () {
     const obtenerPuntajes = `
       query obtenerPuntajes {

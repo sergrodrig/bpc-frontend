@@ -10,7 +10,8 @@ import './index.css'
 import LogRocket from 'logrocket'
 import { createClient } from 'villus'
 
-const client = createClient({ url: process.env.VUE_APP_API_URL })
+// const client = createClient({ url: process.env.VUE_APP_API_URL })
+const client = createClient({ url: 'http://localhost:3000/api/graphql' })
 
 LogRocket.init('nckyti/sudoers-remuneraciones')
 
