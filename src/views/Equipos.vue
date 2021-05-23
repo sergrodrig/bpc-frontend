@@ -38,7 +38,7 @@
         class="text-gray-600 body-font min-h-screen space-y-24"
       >
         <div
-          v-for="faccion in data.allFacciones"
+          v-for="faccion in data.allCodFactions"
           :key="faccion.id"
           class="container mx-auto max-w-5xl"
         >
@@ -87,7 +87,7 @@ export default {
   setup () {
     const obtenerFacciones = `
       query obtenerFacciones{
-        allFacciones{
+        allCodFactions{
           id
           name
           initials

@@ -4,21 +4,21 @@
       titulo="Tabla de posiciones"
       subtitulo="3 puntos triunfo / 1 punto empate / 0 puntos derrota"
     />
-    <!-- <resultados-tabla /> -->
+    <resultados-tabla />
     <resultados-fechas class="h-full" />
   </div>
 </template>
 
 <script>
 import BannerPagina from '@/components/BannerPagina'
-// import ResultadosTabla from '@/components/ResultadosTabla'
+import ResultadosTabla from '@/components/ResultadosTabla'
 import ResultadosFechas from '@/components/ResultadosFechas'
 
 export default {
   name: 'Resultados',
   components: {
     BannerPagina,
-    // ResultadosTabla,
+    ResultadosTabla,
     ResultadosFechas
   }
 }

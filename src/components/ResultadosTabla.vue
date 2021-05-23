@@ -46,36 +46,33 @@
                 Rounds
                 Ganados
               </th>
-              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell">
+              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell rounded-tr rounded-br">
                 Rounds perdidos
               </th>
-              <!-- <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell rounded-tr rounded-br">
-                Ratio
-              </th> -->
             </tr>
           </thead>
           <tbody>
             <tr
-              v-for="value,key in data.allPuntajes"
+              v-for="value,key in data.allCodLeagueTables"
               :key="value.id"
             >
               <td class="text-center py-3">
                 {{ key + 1 }}
               </td>
               <td class="py-3&quot;">
-                {{ value.team.name }}
+                {{ value.faction.name }}
               </td>
               <td class="text-center py-3 font-bold">
-                {{ value.points }}
+                {{ value.score }}
               </td>
               <td class="text-center py-3 hidden md:table-cell">
-                {{ value.matchPlayed }}
+                {{ value.played }}
               </td>
               <td class="text-center py-3 hidden md:table-cell">
-                {{ value.roundsWon }}
+                {{ value.totalRoundsWon }}
               </td>
               <td class="text-center py-3 hidden md:table-cell">
-                {{ value.roundsLost }}
+                {{ value.totalRoundsLost }}
               </td>
               <!-- <td class="text-center py-3 hidden md:table-cell">
                 {{ value.roundsWLRatio }}
@@ -96,17 +93,15 @@ export default {
   setup () {
     const obtenerPuntajes = `
       query obtenerPuntajes {
-        allPuntajes(sortBy:[points_DESC,roundsWLRatio_DESC]) {
+        allCodLeagueTables(sortBy: [score_DESC]) {
           id
-          position
-          team {
+          faction {
             name
           }
-          points
-          matchPlayed
-          roundsWon
-          roundsLost
-          roundsWLRatio
+          score
+          played
+          totalRoundsWon
+          totalRoundsLost
         }
       }
     `

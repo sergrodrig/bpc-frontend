@@ -1,43 +1,45 @@
 <template>
   <section class="text-gray-600 body-font pt-12">
+    <div v-if="isFetching">
+      <p>fetching...</p>
+    </div>
     <div
       v-if="data"
       class="space-y-12"
     >
       <div
-        v-for="fecha in data.allCodLeagueWeeks"
-        :key="fecha.id"
+        v-for="week in data.allCodLeagueWeeks"
+        :key="week.id"
       >
         <!-- cabecera -->
         <div class="bg-green-500 rounded text-white flex flex-col justify-center items-center py-1">
           <h1 class="text-xl font-bold">
-            Fecha {{ fecha.week }}
+            Fecha {{ week.week }}
           </h1>
           <h2 class="text-xs uppercase font-medium tracking-wider">
-            <!-- {{ humanFriendlyDate(fecha.date) }} -->
-            {{ humanFriendlyDate(fecha.date) }} ({{ diffForHumans(fecha.date) }})
+            {{ humanFriendlyDate(week.date) }} ({{ diffForHumans(week.date) }})
           </h2>
         </div>
         <!-- resultados -->
         <div
-          v-for="resultado in fecha.results"
-          :key="resultado.id"
+          v-for="result in week.results"
+          :key="result.id"
           class="grid grid-cols-11 border-b"
         >
           <div class="text-right col-start-1 col-end-5">
-            {{ resultado.homeFaction.name }}
+            {{ result.homeFaction.name }}
           </div>
           <div class="text-right col-start-5 col-end-6">
-            {{ resultado.homeScore }}
+            {{ result.homeScore }}
           </div>
           <div class="text-center col-start-6 col-end-7">
             vs
           </div>
           <div class="text-left col-start-7 col-end-8">
-            {{ resultado.awayScore }}
+            {{ result.awayScore }}
           </div>
           <div class="text-left col-start-8 col-end-12">
-            {{ resultado.awayFaction.name }}
+            {{ result.awayFaction.name }}
           </div>
         </div>
       </div>
@@ -47,14 +49,17 @@
 
 <script>
 import { useQuery } from 'villus'
+
 import dayjs from 'dayjs'
 import localeEs from 'dayjs/locale/es'
+import relativeTime from 'dayjs/plugin/relativeTime'
+dayjs.extend(relativeTime)
 
 export default {
   name: 'ResultadosFechas',
   setup () {
-    const allCodLeagueWeeks = `
-      query allCodLeagueWeeks{
+    const obtenerResultados = `
+      query obtenerResultados {
         allCodLeagueWeeks {
           id
           week
@@ -74,16 +79,16 @@ export default {
             homeScore
             awayScore
             homeRounds
-            awayRounds      
+            awayRounds
           }
         }
       }
     `
-    const { data } = useQuery({
-      query: allCodLeagueWeeks
+    const { data, isFetching } = useQuery({
+      query: obtenerResultados
     })
 
-    return { data }
+    return { data, isFetching }
   },
   methods: {
     diffForHumans (date) {
@@ -95,7 +100,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
