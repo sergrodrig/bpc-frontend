@@ -38,7 +38,7 @@
         class="text-gray-600 body-font min-h-screen space-y-24"
       >
         <div
-          v-for="faccion in data.allCodFactions"
+          v-for="faccion in data.allCod_Facciones"
           :key="faccion.id"
           class="container mx-auto max-w-5xl"
         >
@@ -86,17 +86,17 @@ export default {
   name: 'Equipos',
   setup () {
     const obtenerFacciones = `
-      query obtenerFacciones{
-        allCodFactions{
-          id
-          name
-          initials
-          soldiers{
-            id
-            nick
-          }
-        }
-      }
+query obtenerFacciones{
+  allCod_Facciones{
+    id
+    name
+    initials
+    soldiers{
+      id
+      nick
+    }
+  }
+}
     `
     const { data, isFetching } = useQuery({
       query: obtenerFacciones

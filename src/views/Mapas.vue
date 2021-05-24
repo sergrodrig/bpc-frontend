@@ -31,13 +31,13 @@
           class="flex flex-wrap -m-4 justify-center"
         >
           <div
-            v-for="image in data.allCodMaps"
+            v-for="image in data.allCod_Mapas"
             :key="image.id"
             class="lg:w-1/3 sm:w-1/2 lg:h-60 p-4"
           >
             <map-card
               :name="image.name"
-              :url="image.photo.image.publicUrl"
+              :url="image.photo.image.publicUrlTransformed"
               :description="image.photo.altText"
               class="hover:shadow-xl"
             />
@@ -61,19 +61,27 @@ export default {
   },
   setup () {
     const obtenerMapas = `
-      query obtenerMapas {
-        allCodMaps {
-          id
-          name
-          size
-          photo {
-            image {
-              publicUrl
-            }
-            altText
+query obtenerMapas {
+  allCod_Mapas {
+    id
+    name
+    size
+    photo {
+      image {
+        publicUrl
+        publicUrlTransformed(
+          transformation: {
+            format: "auto"
+            crop: "scale"
+            quality: "auto"
+            width: "600"
           }
-        }
+        )
       }
+      altText
+    }
+  }
+}
     `
     const { data, isFetching } = useQuery({
       query: obtenerMapas

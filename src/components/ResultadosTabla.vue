@@ -40,20 +40,22 @@
                 Puntos
               </th>
               <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell">
-                Fechas Jugadas
+                P.Jugados
               </th>
               <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell">
-                Rounds
-                Ganados
+                Rounds+
+              </th>
+              <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell">
+                Rounds-
               </th>
               <th class="text-center py-3 tracking-wider font-medium text-sm bg-indigo-700 text-white hidden md:table-cell rounded-tr rounded-br">
-                Rounds perdidos
+                Ratio
               </th>
             </tr>
           </thead>
           <tbody>
             <tr
-              v-for="value,key in data.allCodLeagueTables"
+              v-for="value,key in data.allCod_Tablas"
               :key="value.id"
             >
               <td class="text-center py-3">
@@ -74,9 +76,9 @@
               <td class="text-center py-3 hidden md:table-cell">
                 {{ value.totalRoundsLost }}
               </td>
-              <!-- <td class="text-center py-3 hidden md:table-cell">
-                {{ value.roundsWLRatio }}
-              </td> -->
+              <td class="text-center py-3 hidden md:table-cell">
+                {{ value.ratio }}
+              </td>
             </tr>
           </tbody>
         </table>
@@ -92,18 +94,19 @@ export default {
   name: 'ResultadosTabla',
   setup () {
     const obtenerPuntajes = `
-      query obtenerPuntajes {
-        allCodLeagueTables(sortBy: [score_DESC]) {
-          id
-          faction {
-            name
-          }
-          score
-          played
-          totalRoundsWon
-          totalRoundsLost
-        }
-      }
+query obtenerPuntajes {
+  allCod_Tablas(sortBy: [score_DESC, ]) {
+    id
+    faction {
+      name
+    }
+    score
+    played
+    totalRoundsWon
+    totalRoundsLost
+    ratio
+  }
+}
     `
     const { data, isFetching } = useQuery({
       query: obtenerPuntajes
