@@ -31,14 +31,14 @@
           class="flex flex-wrap -m-4 justify-center"
         >
           <div
-            v-for="image in data.allMapas"
+            v-for="image in data.allCodMaps"
             :key="image.id"
             class="lg:w-1/3 sm:w-1/2 lg:h-60 p-4"
           >
             <map-card
               :name="image.name"
-              :url="image.url"
-              :description="image.description"
+              :url="image.photo.image.publicUrl"
+              :description="image.photo.altText"
               class="hover:shadow-xl"
             />
           </div>
@@ -61,11 +61,17 @@ export default {
   },
   setup () {
     const obtenerMapas = `
-      query obtenerMapas{
-        allMapas{
+      query obtenerMapas {
+        allCodMaps {
           id
           name
-          url: urlTiny
+          size
+          photo {
+            image {
+              publicUrl
+            }
+            altText
+          }
         }
       }
     `
