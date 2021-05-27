@@ -54,7 +54,7 @@
             <div
               v-for="soldado in faccion.soldiers"
               :key="soldado.id"
-              class="p-2 lg:w-1/3 md:w-1/2 w-full"
+              class="p-2 lg:w-1/2 md:w-1/2 w-full"
             >
               <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <div class="w-16 h-16 bg-gray-500 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
@@ -63,10 +63,16 @@
                   </p>
                 </div>
                 <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">
-                    {{ soldado.nick }}
+                  <h2 class="title-font font-medium">
+                    <div v-if="soldado.clan">
+                      <span
+                        class="font-extrabold"
+                        :class="soldado.clan.name === 'BP.C' ? 'text-green-500' : 'text-red-600'"
+                      >[{{ soldado.clan.name }}]</span> {{ soldado.nick }}
+                    </div>
+                    <span v-else>{{ soldado.nick }}</span>
                   </h2>
-                  <p class="text-gray-500">
+                  <p class="text-gray-500 text-xs">
                     @{{ soldado.nick }}
                   </p>
                 </div>
@@ -94,6 +100,9 @@ query obtenerFacciones{
     soldiers{
       id
       nick
+      clan {
+        name
+      }
     }
   }
 }
