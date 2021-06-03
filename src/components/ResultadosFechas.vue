@@ -89,7 +89,7 @@ export default {
   setup () {
     const obtenerResultados = `
 query obtenerResultados {
-  allCod_Fechas {
+  allCod_Fechas(sortBy:date_ASC) {
     id
     open
     week
